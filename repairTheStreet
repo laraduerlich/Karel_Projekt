@@ -1,0 +1,20 @@
+void repairTheStreet() {
+    repeat(9)
+    {
+        checkRight();
+        moveForward();
+    }
+    checkRight();
+}
+
+void checkRight() {
+    if(rightIsClear())
+    {
+        turnRight();
+        moveForward();
+        dropBeeper();
+        turnAround();
+        moveForward();
+        turnRight();
+    }
+}
